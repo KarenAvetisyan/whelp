@@ -253,17 +253,20 @@ section{
       line-height: 24px;
       margin-bottom: 20px;
     }
-  ._tg-link{
-    font-size: 16px!important;
-    line-height: 19px!important;
-  }
-  ._tel-img{
-    margin-bottom: 10px;
-    max-width: 161px;
-  }
-  ._tel-info{
-    font-size: 14px;
-  }
+    ._tg-link{
+      font-size: 16px!important;
+      line-height: 19px!important;
+    }
+    ._tel-img{
+      margin-bottom: 10px;
+      max-width: 161px;
+    }
+    ._tel-info{
+      font-size: 14px;
+    }
+    .fw-bold-mobile{
+      font-weight: bold!important;
+    }
 }
 
 
@@ -704,5 +707,87 @@ section{
 @media (min-width: 1200px) {
   .payment ._subtitle{
     font-size: 28px;
+  }
+}
+
+.whatIs-item{
+  display: inline-block;
+  width: 100%;
+  max-width: 590px;
+  text-align: left;
+}
+.whatIs-item._1{
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 79px;  
+  margin-bottom: -20px;
+}
+.whatIs-item._2{
+  max-width: 425px;
+}
+.whatIs-item._2,
+.whatIs-item._3{
+  margin-top: 244px;
+}
+.whatIs-item__title{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.whatIs-item__txt{
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 101%;
+}
+.whatIs-map{
+  min-width: 520px;
+  margin-left: -42px;
+}
+@media (max-width: 1559px) {
+  .whatIs-map {
+      min-width: 100%;
+      margin-left: -42px;
+  }
+  .whatIs-item__title {
+      font-size: 33px;
+      line-height: 48px;
+  }
+  .whatIs-item._2, .whatIs-item._3 {
+      margin-top: 211px;
+  }
+}
+@media (max-width: 1199px) {
+  .whatIs-item._1 {
+    margin-left: 45px;
+     gap: 22px;
+     margin-bottom: 0px;
+  }
+  .whatIs-item__txt {
+      font-size: 21px;
+  }
+      .whatIs-item__title {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}
+@media (max-width: 991px) {
+  .whatIs-map{
+    margin-left: 0;
+  }
+}
+
+.customSc ul li{
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .customSc ul{
+    padding-left:  0px;
+  }
+  .customSc ul li{
+    margin-bottom: 15px;
   }
 }
